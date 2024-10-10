@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet {
                 request.getSession().setAttribute("usuario", usuario);
                 response.sendRedirect("panel.jsp");
             }else{                
-                response.sendRedirect("index.html");
+                response.sendRedirect("index.html"); 
             }
         } catch (SQLException ex) {
             Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
